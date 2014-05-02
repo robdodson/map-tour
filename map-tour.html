@@ -1,0 +1,43 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../core-ajax/core-ajax.html">
+<link rel="import" href="../google-map/google-map.html">
+<link rel="import" href="../polymer-ui-card/polymer-ui-card.html">
+<link rel="import" href="../x-tag-imports/x-tag-flipbox.html">
+<link rel="import" href="../google-map-streetview-panorama/google-map-streetview-panorama.html">
+<polymer-element name="map-tour">
+  <template>
+    <link rel="stylesheet" href="map-tour.css">
+    <core-ajax auto
+      url="https://ocean-views.firebaseio.com/views.json"
+      response="{{views}}">
+    </core-ajax>
+
+    <google-map-streetview-panorama map="{{map}}"
+      heading="{{views[0].heading}}"
+      zoom="{{views[0].zoom}}"
+      pitch="{{views[0].pitch}}"
+      panoid="{{views[0].panoid}}">
+    </google-map-streetview-panorama>
+
+    <x-flipbox id="flipbox" on-tap="{{doFlip}}">
+      <polymer-ui-card>
+        <h3>{{views[0].name}}</h3>
+        <google-map map="{{map}}"
+          longitude="{{views[0].longitude}}"
+          latitude="{{views[0].latitude}}"
+          showCenterMarker>
+        </google-map>
+      </polymer-ui-card>
+      <polymer-ui-card>
+        <div class="description">{{views[0].description}}</div>
+      </polymer-ui-card>
+    </x-flipbox>
+  </template>
+  <script>
+  Polymer('map-tour', {
+    doFlip: function() {
+      this.$.flipbox.toggle();
+    }
+  });
+  </script>
+</polymer-element>

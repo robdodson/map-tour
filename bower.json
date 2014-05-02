@@ -1,0 +1,19 @@
+{
+  "name": "map-tour",
+  "version": "0.0.0",
+  "dependencies": {
+    "polymer": "Polymer/polymer#master",
+    "x-tag-imports": "robdodson/x-tag-imports#~0.1.4",
+    "google-map": "PolymerLabs/google-map#~0.2.3",
+    "polymer-ui-card": "PolymerLabs/polymer-ui-card#~0.2.3",
+    "core-ajax": "Polymer/core-ajax#~0.2.3",
+    "gplus-button": "robdodson/gplus-button#master",
+    "google-map-streetview-panorama": "robdodson/google-map-streetview-panorama#~0.0.1"
+  },
+  "resolutions": {
+    "polymer": "master",
+    "platform": "master",
+    "core-component-page": "master",
+    "core-action-icons": "master"
+  }
+}

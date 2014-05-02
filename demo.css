@@ -1,0 +1,21 @@
+*, *::after, *::before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #CCC;
+}
+
+map-tour {
+  height: 100%;
+}
+
+gplus-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
