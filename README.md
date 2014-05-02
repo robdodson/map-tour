@@ -2,6 +2,10 @@
 
 This code is from my live demo at the SFHTML5 Polymer meet-up.
 
+### [Wath the video](https://www.youtube.com/watch?v=mN7IAaRdi_k&feature=share&t=2h41m10s)
+
+## Getting Started
+
 - Create a folder called `development`
 - `cd` into `development`
 - Clone this repo inside of `development`. Your file structure should look like this:
