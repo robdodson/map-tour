@@ -11,7 +11,7 @@ This code is from my live demo at the SFHTML5 Polymer meet-up.
 - Clone this repo inside of `development`. Your file structure should look like this:
 
 ```
-devlopment/
+development/
   map-tour/
 ```
 
